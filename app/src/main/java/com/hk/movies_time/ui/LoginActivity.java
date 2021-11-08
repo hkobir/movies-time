@@ -1,4 +1,4 @@
-package com.hk.movies_time;
+package com.hk.movies_time.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 
+import com.hk.movies_time.R;
 import com.hk.movies_time.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {

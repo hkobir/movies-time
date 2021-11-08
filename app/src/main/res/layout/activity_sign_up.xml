@@ -1,156 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".SignUpActivity">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/loginLabel"
-        style="@style/AppExtraLargeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:text="Registration"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linkLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@id/loginLabel"
-        app:layout_constraintTop_toBottomOf="@id/loginLabel">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".ui.SignUpActivity">
 
         <androidx.appcompat.widget.AppCompatTextView
-            style="@style/AppMediumText"
+            android:id="@+id/loginLabel"
+            style="@style/AppExtraLargeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="If already have account."
-            android:textColor="@color/grey"
-            android:textSize="14sp" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Registration"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/goLogInBtn"
-            style="@style/AppMediumText"
+        <LinearLayout
+            android:id="@+id/linkLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:clickable="true"
-            android:text="Login here" />
-    </LinearLayout>
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/loginLabel">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/nameET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="45dp"
-        android:background="@drawable/custom_edittext"
-        android:hint="Your full name"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingVertical="18dp"
-        android:paddingLeft="15dp"
-        android:textColorHint="@color/hintColorET"
-        app:layout_constraintStart_toStartOf="@id/loginLabel"
-        app:layout_constraintTop_toBottomOf="@id/linkLabel" />
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If already have account."
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/userIdET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="45dp"
-        android:background="@drawable/custom_edittext"
-        android:hint="User Id"
-        android:imeOptions="actionNext"
-        android:inputType="text"
-        android:paddingVertical="18dp"
-        android:paddingLeft="50dp"
-        android:textColorHint="@color/hintColorET"
-        app:layout_constraintStart_toStartOf="@id/loginLabel"
-        app:layout_constraintTop_toBottomOf="@id/nameET" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/goLogInBtn"
+                style="@style/AppMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="Login here" />
+        </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/ic_baseline_user"
-        app:layout_constraintBottom_toBottomOf="@id/userIdET"
-        app:layout_constraintLeft_toLeftOf="@id/loginLabel"
-        app:layout_constraintTop_toTopOf="@id/userIdET" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Your full name"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingVertical="18dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/linkLabel" />
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/passET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="45dp"
-        android:background="@drawable/custom_edittext"
-        android:hint="Password"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingVertical="18dp"
-        android:paddingLeft="50dp"
-        android:textColorHint="@color/hintColorET"
-        app:layout_constraintStart_toStartOf="@id/loginLabel"
-        app:layout_constraintTop_toBottomOf="@id/userIdET" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userIdET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="User email"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingVertical="18dp"
+            android:paddingLeft="50dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/nameET" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/ic_baseline_pass"
-        app:layout_constraintBottom_toBottomOf="@id/passET"
-        app:layout_constraintLeft_toLeftOf="@id/loginLabel"
-        app:layout_constraintTop_toTopOf="@id/passET" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/userIdET"
+            app:layout_constraintLeft_toLeftOf="@id/loginLabel"
+            app:layout_constraintTop_toTopOf="@id/userIdET"
+            app:srcCompat="@drawable/ic_baseline_user" />
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/confirmPassET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="45dp"
-        android:background="@drawable/custom_edittext"
-        android:hint="Confirm Password"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingVertical="18dp"
-        android:paddingLeft="50dp"
-        android:textColorHint="@color/hintColorET"
-        app:layout_constraintStart_toStartOf="@id/loginLabel"
-        app:layout_constraintTop_toBottomOf="@id/passET" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingVertical="18dp"
+            android:paddingLeft="50dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/userIdET" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/ic_baseline_pass"
-        app:layout_constraintBottom_toBottomOf="@id/confirmPassET"
-        app:layout_constraintLeft_toLeftOf="@id/loginLabel"
-        app:layout_constraintTop_toTopOf="@id/confirmPassET" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/passET"
+            app:layout_constraintLeft_toLeftOf="@id/loginLabel"
+            app:layout_constraintTop_toTopOf="@id/passET"
+            app:srcCompat="@drawable/ic_baseline_pass" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/confirmPassET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Confirm Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingVertical="18dp"
+            android:paddingLeft="50dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/loginLabel"
+            app:layout_constraintTop_toBottomOf="@id/passET" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/confirmPassET"
+            app:layout_constraintLeft_toLeftOf="@id/loginLabel"
+            app:layout_constraintTop_toTopOf="@id/confirmPassET"
+            app:srcCompat="@drawable/ic_baseline_pass" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signUpBtn"
-        style="@style/AppMediumText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="45dp"
-        android:background="@drawable/button_back"
-        android:text="Sign up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confirmPassET" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpBtn"
+            style="@style/AppMediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:background="@drawable/button_back"
+            android:text="Sign up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirmPassET" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

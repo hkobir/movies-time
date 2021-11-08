@@ -1,14 +1,16 @@
-package com.hk.movies_time;
+package com.hk.movies_time.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SignUpActivity extends AppCompatActivity {
+import com.hk.movies_time.R;
+
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_profile);
     }
 }

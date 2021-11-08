@@ -1,14 +1,16 @@
-package com.hk.movies_time;
+package com.hk.movies_time.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ProfileActivity extends AppCompatActivity {
+import com.hk.movies_time.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_main);
     }
 }

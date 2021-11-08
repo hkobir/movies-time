@@ -1,4 +1,4 @@
-package com.hk.movies_time;
+package com.hk.movies_time.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.hk.movies_time.R;
 import com.hk.movies_time.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends AppCompatActivity {

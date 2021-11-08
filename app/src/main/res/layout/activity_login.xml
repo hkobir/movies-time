@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
-        tools:context=".LoginActivity">
+        tools:context=".ui.LoginActivity">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/appIcon"
@@ -64,7 +64,7 @@
             android:layout_marginTop="55dp"
             android:layout_marginRight="45dp"
             android:background="@drawable/custom_edittext"
-            android:hint="User Id"
+            android:hint="User email"
             android:imeOptions="actionNext"
             android:inputType="text"
             android:paddingVertical="18dp"
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/ic_baseline_user"
+            app:srcCompat="@drawable/ic_baseline_user"
             app:layout_constraintBottom_toBottomOf="@id/userIdET"
             app:layout_constraintLeft_toLeftOf="@id/appIcon"
             app:layout_constraintTop_toTopOf="@id/userIdET" />
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/ic_baseline_pass"
+            app:srcCompat="@drawable/ic_baseline_pass"
             app:layout_constraintBottom_toBottomOf="@id/passET"
             app:layout_constraintLeft_toLeftOf="@id/appIcon"
             app:layout_constraintTop_toTopOf="@id/passET" />
@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="65dp"
-            android:src="@drawable/ic_baseline_visibility"
+            app:srcCompat="@drawable/ic_baseline_visibility"
             app:layout_constraintBottom_toBottomOf="@id/passET"
             app:layout_constraintRight_toRightOf="@id/passET"
             app:layout_constraintTop_toTopOf="@id/passET" />

@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Moviestime">
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +18,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name=".ui.ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".ui.SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
 
         </activity>

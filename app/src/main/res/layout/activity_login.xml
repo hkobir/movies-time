@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".LoginActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_m_movie_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loginLabel"
+            style="@style/AppExtraLargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Login Now"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/appIcon"
+            app:layout_constraintTop_toBottomOf="@id/appIcon" />
+
+        <LinearLayout
+            android:id="@+id/linkLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/appIcon"
+            app:layout_constraintTop_toBottomOf="@id/loginLabel">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If are new."
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/createAccBtn"
+                style="@style/AppMediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="Create Account" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userIdET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="User Id"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingVertical="18dp"
+            android:paddingLeft="50dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/appIcon"
+            app:layout_constraintTop_toBottomOf="@id/linkLabel" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_user"
+            app:layout_constraintBottom_toBottomOf="@id/userIdET"
+            app:layout_constraintLeft_toLeftOf="@id/appIcon"
+            app:layout_constraintTop_toTopOf="@id/userIdET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingVertical="18dp"
+            android:paddingLeft="50dp"
+            android:textColorHint="@color/hintColorET"
+            app:layout_constraintStart_toStartOf="@id/appIcon"
+            app:layout_constraintTop_toBottomOf="@id/userIdET" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_pass"
+            app:layout_constraintBottom_toBottomOf="@id/passET"
+            app:layout_constraintLeft_toLeftOf="@id/appIcon"
+            app:layout_constraintTop_toTopOf="@id/passET" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/visibilityIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="65dp"
+            android:src="@drawable/ic_baseline_visibility"
+            app:layout_constraintBottom_toBottomOf="@id/passET"
+            app:layout_constraintRight_toRightOf="@id/passET"
+            app:layout_constraintTop_toTopOf="@id/passET" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            style="@style/AppMediumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45dp"
+            android:background="@drawable/button_back"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passET" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

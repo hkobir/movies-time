@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">movies-time</string>
+    <string name="app_name">Movies Time</string>
+    <string name="slogan_text">Find your favourite movie review</string>
 </resources>

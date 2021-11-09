@@ -2,12 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hk.movies_time">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Moviestime">
+        <activity
+            android:name=".ui.DetailActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.SplashActivity"
             android:exported="true">
@@ -28,9 +34,7 @@
             android:exported="true" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

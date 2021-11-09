@@ -25,7 +25,7 @@ public abstract class UserDatabase extends RoomDatabase {
             synchronized (UserDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            UserDatabase.class, "task_database")
+                            UserDatabase.class, "user_database")
                             .build();
 
 

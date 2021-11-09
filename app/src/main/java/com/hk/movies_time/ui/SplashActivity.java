@@ -3,6 +3,7 @@ package com.hk.movies_time.ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
@@ -40,5 +41,6 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void checkInitialLogic() {
+        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
     }
 }

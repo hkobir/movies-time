@@ -13,13 +13,18 @@
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/ic_clear.xml" value="0.14879725085910653" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/ic_m_movie_icon.xml" value="0.14879725085910653" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/ic_search.xml" value="0.14879725085910653" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/image_back.xml" value="0.14879725085910653" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/info_movie_back.xml" value="0.14879725085910653" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/rating_back.xml" value="0.14879725085910653" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/drawable/search_view_back.xml" value="0.15034722222222222" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/font/font.xml" value="0.15807560137457044" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_detail.xml" value="0.17" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_login.xml" value="0.15" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_profile.xml" value="0.13958333333333334" />
-        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_sign_up.xml" value="0.15" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/activity_splash.xml" value="0.13958333333333334" />
+        <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/layout/item_movie_layout.xml" value="0.14" />
         <entry key="..\:/Android Development/Projects/movies-time/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14879725085910653" />
       </map>
     </option>

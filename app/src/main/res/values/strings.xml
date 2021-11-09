@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Movies Time</string>
     <string name="slogan_text">Find your favourite movie review</string>
+    <string name="api_key">4889e0a2629c8329d9cbe5b330710a0f</string>
+    <string name="story">Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family.
+        Thus begins a saga.</string>
 </resources>

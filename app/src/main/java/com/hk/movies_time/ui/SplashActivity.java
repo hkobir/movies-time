@@ -52,12 +52,12 @@ public class SplashActivity extends AppCompatActivity {
     private void checkInitialLogic() {
         if (DataPreference.getString(SplashActivity.this, SESSION_KEY).equals("")) {
             startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            finish();
         } else {
             goHome(
                     DataPreference.getString(SplashActivity.this, SESSION_KEY)
             );
         }
-        finish();
     }
 
     private void goHome(String email) {
@@ -67,6 +67,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (user != null) {
                     Common.currentUser = user;
                     startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    finish();
                 }
             }
         });

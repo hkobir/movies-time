@@ -60,7 +60,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/ic_movie"
+                    android:src="@drawable/user_icon"
                     app:civ_border_color="@color/background_has"
                     app:civ_border_width="1dp" />
             </LinearLayout>

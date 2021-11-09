@@ -19,6 +19,7 @@ import com.hk.movies_time.viewmodel.UserViewModel;
 public class SignUpActivity extends AppCompatActivity {
     private ActivitySignUpBinding binding;
     UserViewModel userViewModel;
+    boolean isLogin = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,14 +74,14 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onChanged(User user) {
                 if (user == null) {
+                    isLogin = true;
                     User userData = new User(name, email, pass);
                     userViewModel.insertUser(userData);
                     binding.progressLoad.setVisibility(View.GONE);
                     Toast.makeText(SignUpActivity.this, "Signed up successfully!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                     finish();
-                    return;
-                } else {
+                } else if (user != null && !isLogin) {
                     binding.userIdET.setError("Email already exist");
                     binding.userIdET.requestFocus();
                     binding.progressLoad.setVisibility(View.GONE);

@@ -20,12 +20,14 @@ import com.hk.movies_time.R;
 import com.hk.movies_time.databinding.ActivityLoginBinding;
 import com.hk.movies_time.models.User;
 import com.hk.movies_time.utils.Common;
+import com.hk.movies_time.utils.DataPreference;
 import com.hk.movies_time.viewmodel.UserViewModel;
 
 public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding;
     private boolean showPassword = true;
     UserViewModel userViewModel;
+    private final String SESSION_KEY = "user";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onChanged(User user) {
                 if (user != null) {
                     Common.currentUser = user;
+                    DataPreference.saveString(LoginActivity.this, SESSION_KEY, user.getUserId());
                     binding.progressLoad.setVisibility(View.GONE);
                     Toast.makeText(LoginActivity.this, "Login successfully!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
